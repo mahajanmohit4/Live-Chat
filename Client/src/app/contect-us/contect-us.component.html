@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <!--   <div class="row1" style="height:100px"></div>-->
+    <div class="row  d-flex justify-content-center align-items-center">
+        <div class="col-lg-5 col-md-12 col-sm-9 col-xs-12 bg-white rounded form-box text-center ">
+            <div class="heading mb-4">
+                <h4>Contact Us</h4>
+            </div>
+            <form  [formGroup]="fbFormGroup">
+                <div class="form-input">
+                    <span><i class="fa fa-user"></i></span>
+                    <input type="text" placeholder="Full Name" id="name"  formControlName="name" >
+                </div>
+                 <div class="form-input">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <input type="email" placeholder="Email Address" id="email"  formControlName="email" required>
+
+                </div>
+                <div>
+                    <span><i class="far fa-comment-alt"></i></span>
+                    <textarea class="form-control border border-info rounded"  formControlName="massage" placeholder="Message"
+                        aria-label="With textarea" rows="5" id="comment"></textarea>
+                </div>
+                <div class="text-left mt-3 d-flex justify-content-center align-items-center">
+                    <button type="submit" (click)="send()" class="btn" id="submit">send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--<div class="row1" style="height:100px"></div>-->
+</div>

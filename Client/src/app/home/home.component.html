@@ -1,0 +1,27 @@
+
+
+  <div class="container-fluid"> 
+    <div class="row bg-light" style="height: 60px;border-bottom:2px solid rgb(190, 190, 190); ">
+        <div class="col d-flex align-items-center text-primary font-weight-bold h6 mt-2 ml-3">LiveChat</div>
+
+        <div class="col d-flex align-items-center justify-content-end mr-4">
+            <!-- <a  > -->
+                <button class="btn bg-transparent font-weight-bold text-primary mr-2" (click)="contact()" >ContactUs</button>
+              <!-- </a> -->
+              <a class=" font-weight-bold mr-5" (click)="processDelete()">
+                <i class="fa fa-user-times" title="DeleteUser" aria-hidden="true"></i></a>
+            <a class=" font-weight-bold"  (click)="processLogout()">
+                <i class="fa fa-sign-out" title="LogOut" aria-hidden="true"></i></a>
+        </div>
+    </div> 
+</div>
+
+
+  <section id="home">
+    <h1 class="h-primary">Welcome to Chatting App</h1>
+    <p style="color: black;">To chat click the below button </p>
+   
+    <button routerLink="/username"  class="btn12">Click Here</button>
+</section>
+
+  <!-- <app-chat></app-chat> -->

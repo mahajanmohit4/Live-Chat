@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.error-template h2{
+    margin-left: 10px;
+    font-size: 50px;
+}
+.error-template h1{
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    margin-bottom: 20px;
+
+}
+.error-template h1>span{
+    color:#23A9C6;
+}
+
+
+
+.login-link{
+    color:#23A9C6;
+    font-weight: bold;
+}

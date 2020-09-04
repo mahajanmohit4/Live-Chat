@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+
+        <div class="col-lg-6 col-md-6 form-container">
+            <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center"   [formGroup]="fbFormGroup">
+                <div class="heading mb-4">
+
+                    <h1><i class="fa fa-comments" aria-hidden="true"></i>LiveChat</h1>
+                    <h4>Create an account</h4>
+                </div>
+               
+               
+                    <div class="form-input">
+
+                        <span><i class="fa fa-user"></i></span>
+                        <input type="text" placeholder="Username" (blur)="name()" id="name" formControlName="username" >
+                        
+                    </div>
+
+                    <div class="form-input">
+                        <span><i class="fa fa-envelope"></i></span>
+                        <input type="email" placeholder="Email Address" (blur)="email()"  formControlName="email"   required>
+                       
+                    </div>
+                    <div class="form-input"> 
+                        <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="Mobile Number" (blur)="phone()"  formControlName="phone"  required>
+                       
+                    </div>
+
+                    <div class="form-input">
+                        <span><i class="fa fa-lock"></i></span>
+                        <input type="password" placeholder="Password" (blur)="password()"  formControlName="password"  required>
+                        
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 d-flex">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="cb1">
+                                <label class="custom-control-label " for="cb1">I agree all terms &
+                                    conditions</label>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="text-left mb-3">
+                        <button type="submit" class="btn" (click)="ajexCall()" id="submit">Register</button>
+                    </div>
+
+                    <div style="color: #777">Already have an account
+                        <a routerLink="/login" class="login-link">Login here</a>
+                    </div>
+              
+            </div>
+        </div>
+    </div>
+</div>

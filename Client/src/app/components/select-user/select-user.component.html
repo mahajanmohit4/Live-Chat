@@ -1,0 +1,19 @@
+
+<div class="row mt-4">
+  <div class="col col-md-4 offset-md-4">
+    <div class="card">
+      <div class="card-body">
+        <form (submit)="setUserName()">
+          <div class="form-group">
+            <label for="user">type your nick name</label>
+            <input type="text" id="user" name="user" class="form-control" [ngClass]="{ 'is-invalid': errMsg !== ''}"
+              [(ngModel)]="username"  >
+            <span class='invalid-feedback'>{{errMsg}}</span>
+          </div>
+
+          <button  class="btn btn-primary btn-lg">Select</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

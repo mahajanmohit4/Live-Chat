@@ -1,0 +1,115 @@
+<!-- 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+
+        <div class="col-lg-6 col-md-6 form-container">
+            <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center" [formGroup]="fbFormGroup">
+               
+                <div class="heading mb-4">
+                    <h4>Login into your account</h4>
+                </div>
+
+                <div class="form-input">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <input type="email" placeholder="Email Address" id="email" formControlName="email" required>
+                    <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                        <p class="p__text__color">Your email must be a valid email</p>
+                    </small>
+                </div>
+                <div class="form-input">
+                    <span><i class="fa fa-lock"></i></span>
+                    <input type="password" placeholder="Password" id="password" formControlName="password" required>
+                    <small id="namevalid" class="form-text text-muted invalid-feedback mt-0">
+                        <p class="p__text__color"> Your password must be 5-20 characters long and should not
+                            start with a number</p>
+                    </small>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="text-left mb-3">
+                        <button type="submit" (click)="loginProcessHere()" id="submit" class="btn">Login</button>
+                    </div>
+                    <div class="col-6 text-right font-weight-bold">
+                        <a href="" class="forget-link">Forget Password</a>
+                    </div>
+                </div>
+                <div class="font-weight-bold" style="color: #777">Don't have an account
+                    <a routerLink="/register" class="register-link">Register here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+
+        <div class="col-lg-6 col-md-6 form-container">
+            <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center" [formGroup]="fbFormGroup">
+
+                <div class="heading mb-4">
+
+                    <h1><i class="fa fa-comments" aria-hidden="true"></i>LiveChat</h1>
+                    <h4>Login into your account</h4>
+                </div>
+
+                <div class="form-input">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <input type="email" placeholder="Email Address" id="email" (blur)="email()" formControlName="email"
+                        required>
+                    <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                        <p class="p__text__color">Your email must be a valid email</p>
+                    </small>
+                </div>
+                <div class="form-input">
+                    <span><i class="fa fa-lock"></i></span>
+                    <input type="password" placeholder="Password" id="password" (blur)="password()"
+                        formControlName="password" required>
+                    <small id="namevalid" class="form-text text-muted invalid-feedback mt-0">
+                        <p class="p__text__color"> Your password must be 5-20 characters long and should not
+                            start with a number</p>
+                    </small>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-6 d-flex">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="cb1">
+                            <label class="custom-control-label " for="cb1">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a routerLink="/forgetpass" class="forget-link">Forget Password</a>
+                    </div>
+                </div>
+                <div class="text-left mb-3">
+                    <button type="submit" (click)="loginProcessHere()" id="submit" class="btn">Login</button>
+                </div>
+
+
+                <div style="color: #777">Don't have an account
+                    <a routerLink="/register" class="register-link">Register here</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

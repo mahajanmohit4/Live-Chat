@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row" style="display: flex;justify-content: center">
+        <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+
+        <div class="col-lg-6 col-md-6 form-container">
+            <div [formGroup]="fbFormGroup"  class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+                <div class="heading mb-4">
+
+                    <h1><i class="fa fa-comments" aria-hidden="true"></i>LiveChat</h1>
+                    <h4>Create an account</h4>
+                </div>
+                
+                <div class="form-input">
+                    <span><i class="fa fa-envelope"></i></span>
+                    <input type="email" placeholder="Email Address"  formControlName="email"  required>
+                </div>
+                <div class="mb-3">
+                    <button class="btn" type="submit"  (click)="send()" >Send link</button>
+                </div>
+             
+                <div style="color: #777"> Back to login?
+                    <a routerLink="/login" class="register-link">Login here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
